@@ -1,30 +1,34 @@
-# Screenshot-to-Code VS Code Extension Rules
+# Screenshot to Code Project Rules
 
-## Project Structure
-- The extension will be built using TypeScript
-- Components will be generated in React + Tailwind CSS
-- All generated code will follow best practices and modern standards
+## Project Overview
+This project converts screenshots or images into code using AI technology.
 
-## Code Generation Rules
-1. Generated components will be functional React components
-2. Tailwind CSS will be used for styling
-3. Components will be responsive by default
-4. Generated code will include proper TypeScript types
-5. Components will follow accessibility best practices
+## Development Guidelines
+1. Follow consistent coding style
+2. Write clear documentation
+3. Test thoroughly before committing
+4. Keep dependencies up to date
 
-## Extension Features
-1. Right-click menu option to generate code from screenshot
-2. Command palette option for code generation
-3. Support for both local image files and clipboard images
-4. Preview window for generated code
-5. Option to customize output format and styling preferences
+## Configuration Requirements
+1. OpenAI API Configuration:
+   - API key must be securely stored using VSCode's SecretStorage
+   - Supported models: GPT-4, GPT-4-turbo-preview, GPT-3.5-turbo
+   - Default model: GPT-4
+   - API key format: sk-...
 
-## Best Practices
-1. Follow VS Code extension development guidelines
-2. Implement proper error handling
-3. Include clear documentation
-4. Maintain clean and organized code structure
-5. Regular testing and validation of generated code
+## Important Notes
+- Keep API keys secure and never commit them to the repository
+- Use environment variables for sensitive information
+- Follow VSCode extension development best practices
 
-## Updates
-- Initial creation: Extension setup and basic rules defined
+## Getting Started
+1. Install dependencies
+2. Configure OpenAI API key through the command palette
+3. Select desired model in VSCode settings
+4. Start using the extension
+
+## Contribution Guidelines
+1. Create feature branches
+2. Write clear commit messages
+3. Update documentation as needed
+4. Submit pull requests for review

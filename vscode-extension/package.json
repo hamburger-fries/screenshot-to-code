@@ -1,6 +1,6 @@
 {
-  "name": "screenshot-to-code",
-  "displayName": "Screenshot to React+Tailwind",
+  "name": "happy-dayz",
+  "displayName": "Happy Dayz",
   "description": "Convert screenshots into React components with Tailwind CSS",
   "version": "0.1.0",
   "publisher": "screenshot-to-code",
@@ -15,21 +15,33 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:screenshot-to-code.generateComponent"
+    "onView:happy-dayz.settingsView"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "screenshot-to-code.generateComponent",
+        "command": "happy-dayz.generateComponent",
         "title": "Generate React Component from Screenshot"
+      },
+      {
+        "command": "happy-dayz.openSettings",
+        "title": "Happy Dayz Settings",
+        "icon": "$(gear)"
       }
     ],
     "menus": {
+      "statusBar/remoteIndicator": [
+        {
+          "command": "happy-dayz.openSettings",
+          "when": "true",
+          "group": "navigation"
+        }
+      ],
       "explorer/context": [
         {
           "when": "resourceExtname =~ /\\.(png|jpg|jpeg|gif)$/",
-          "command": "screenshot-to-code.generateComponent",
+          "command": "happy-dayz.generateComponent",
           "group": "navigation"
         }
       ]
